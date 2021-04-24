@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //利用函数求任意数的最大值
+        // function max() {
+        //     for (var i = 0; i < arguments.length; i++) {
+        //         if (arguments[0] < arguments[i]) {
+        //             arguments[0] = arguments[i];
+        //         }
+        //     }
+        //     return arguments[0];
+        // }
+        // console.log(max(1, 2, 4, 55, 77, 88, 66, 415, 254));
+        //利用函数翻转数组
+        // var newshuzu = [];
+        // function shuzu() {
+        //     for (var i = arguments.length - 1; i >= 0; i--) {
+        //         newshuzu[newshuzu.length] = arguments[i];
+        //     }
+        //     return newshuzu;
+        // }
+        // console.log(shuzu(1, 2, 3, 4, 5, 6));
+        //函数封装冒泡排序
+
+        // function paixu() {
+        //     for (var i = 0; i < arguments[arguments.length] - 1; i++) {
+        //         var temp = 0;
+        //         for (var j = 0; j < arguments[arguments.length] - 1 - i; j++) {
+        //             if (arguments[j] > arguments[j + 1]) {
+        //                 temp = arguments[j];
+        //                 arguments[j] = arguments[j + 1];
+        //                 arguments[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     return arguments;
+        // }
+        // console.log(paixu(5, 4, 3, 2, 1, 99));
+        // function shuzu(arr) {
+        //     for (var i = 0; i < arr.length - 1; i++) {
+        //         var temp = 0;
+        //         for (var j = 0; j < arr.length - 1 - i; j++) {
+        //             if (arr[j] > arr[j + 1]) {
+        //                 temp = arr[j];
+        //                 arr[j] = arr[j + 1];
+        //                 arr[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // console.log(shuzu([5, 4, 3, 2, 1, 99]));
+        // var star = '';//空字符串的使用
+        // for (var i = 0; i < 5; i++) {
+        //     for (var j = 0; j < 5; j++) {
+        //         star += '*';
+        //     }
+        //     star += '\n';
+        // }
+        // console.log(star);
+        // var num = prompt("请输入一个整数：");
+        // function getRandomIntInclusive(min, max) {
+        //     min = Math.ceil(min);
+        //     max = Math.floor(max);
+        //     return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值 
+        // }
+        // var guess = getRandomIntInclusive(0, 100);
+        // while (num != guess) {
+        //     if (num > guess) {
+        //         alert("你输入的数值过大");
+        //         num = prompt("请输入一个整数：");
+        //     }
+        //     else {
+        //         alert("你输入的数值过小");
+        //         num = prompt("请输入一个整数：");
+        //     }
+
+        // }
+        // alert("恭喜你你答对了！");
+        //输出年月日
+        // var time = new Date();
+        // var year = time.getFullYear();
+        // var month = time.getMonth() + 1;
+        // var date = time.getDate();
+        // var day = time.getDay();
+        // var arr = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        // console.log("现在日期是：" + year + "年" + month + "月" + date + "日" + arr[day]);
+        //封装函数输出当前时分秒
+        // function getTime() {
+        //     var hours = time.getHours();
+        //     var minute = time.getMinutes();
+        //     var second = time.getSeconds();
+        //     hours < 10 ? '0' + hours : hours;
+        //     minute < 10 ? '0' + minute : minute;
+        //     second < 10 ? '0' + second : second;
+        //     return hours + ':' + minute + ':' + second;
+        // }
+        // console.log(getTime());
+        // var ms = +new Date();
+        // console.log(ms);
+        //倒计时
+        // function countDown(time) {
+        //     var nowTime = +new Date();
+        //     var inputTime = +new Date(time);
+        //     var times = (inputTime - nowTime) / 1000;
+        //     var d = parseInt(times / 60 / 60 / 24);
+        //     var h = parseInt(times / 60 / 60 % 24);
+        //     var m = parseInt(times / 60 % 60);
+        //     var s = parseInt(times % 60);
+        //     d < 10 ? '0' + d : d;
+        //     h < 10 ? '0' + h : h;
+        //     m < 10 ? '0' + m : m;
+        //     s < 10 ? '0' + s : s;
+        //     return "还剩余：" + d + "天" + h + "时" + m + "分" + m + "秒";
+        // }
+        // console.log(countDown('2021-2-28 00:00:00'));
+
+        // console.log(arr.reverse());
+        // var shuzu = [1, 12, 45, 2, 999, 4215, 715255, 214];
+        // shuzu.sort(
+        //     function (a, b) {
+        //         return a - b;
+        //     }
+        // );
+        // console.log(shuzu);
+        //数组去重
+        // var arr = [1, 2, 5, 2, 1, 5, 9, 9, 8, 3, 2, 1, 1];//1 2 3 5 8 9
+        // var newarr = [];
+        // function quchong(arr) {
+
+        //     for (var i = 0; i < arr.length; i++) {
+        //         if (newarr.indexOf(arr[i]) == -1) {
+        //             newarr.push(arr[i]);
+        //         }
+        //     }
+        //     return newarr;
+        // }
+        // console.log(quchong(arr));
+        //记录位置和查找次数
+        // var arr= [1, 2, 5, 2, 1, 5, 9, 9, 8, 3, 2, 1, 1];
+        //统计字符串中字符出现的次数，并找出最大值，这个算法比较好，多回顾
+        // var str = 'ahnlklsdbksdbvahuwyegfsku';
+        // var o = {};
+        // o['lp'] = 1;这里不输入=1，是不会把lp储存到o这个对象当中去的，赋值过后才能储存到一个对象中去
+
+        // console.log(o);
+        // console.log(str);
+        // for (var i = 0; i < str.length; i++) {
+        //     if (o[str.charAt(i)]) {
+        //         o[str.charAt(i)]++;
+        //     }
+        //     else {
+        //         o[str.charAt(i)] = 1;
+        //     }
+        // }
+        // console.log(o);
+        //在遍历对象
+        // var max = 0;
+        // var ch = '';
+        // for (var k in o) {
+        //     if (max < o[k]) {
+        //         max = o[k];
+        //         ch = k;
+        //     }
+        // }
+        // console.log('最多出现的次数为：' + max + '字符是：' + ch);
+        //内置对象-数组‘
+        // var arr = [1, 2, 4, 5, 3, 9, 8, 7];
+
+        // console.log(arr instanceof Array);
+        // console.log(arr.reverse());
+        // console.log(arr.sort(
+        //     function (a, b) {
+        //         return a - b;
+        //     }
+        // ));
+        // arr.push('lala');
+        // console.log(arr.push('lala'));//此时数组又增加了一个数组元素lala，返回的是数组长度
+        // console.log(arr);
+        // for (var i = 0; i < 5; i++) {
+        //     arr.push('我');
+        // }
+        // console.log(arr);
+        // for (var i = 0; i < 9; i++) {
+        //     arr.pop();
+        // }
+        // console.log(arr);
+        // console.log(arr.pop());
+        // console.log(arr.indexOf(4));
+        //数组去重
+        // var arr = [0, 0, 0, 1, 2, 4, 4, 5, 2, 1, 5, 8, 5, 7, 6, 6, 7]//01245678
+        // var newarr = [];
+        // for (var i = 0; i < arr.length; i++) {
+        //     if (newarr.indexOf(arr[i]) == -1) {
+        //         newarr.push(arr[i]);
+        //     }
+        // }
+        // console.log(newarr);
+
+
+    </script>
+    <style>
+        img {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <button id="zxy">张学友</button><button id="ldh">刘德华</button><br />
+    <img src="pic/logo.png" alt="">
+
+    <script>
+        var zxy = document.getElementById('zxy');
+        var ldh = document.getElementById('ldh');
+        var img = document.getElementsByTagName('img');//利用这个标签发返回的是一个对象的集合
+        zxy.onclick = function () {
+            img[0].src = 'pic/mid_bg.png';//如果这里只写img是不起作用的
+            alert('张学友被选中了');
+        }
+        ldh.onclick = function () {
+            img[0].src = 'pic/logo.png';
+            alert('刘德华被选中了');
+        }
+    </script> -->
+    <!-- 分时显示不同的图片和不同的问候语 -->
+    <!-- <img src="pic/more.png" alt="">
+    <p>早上好呀！</p>
+    <script>
+        var img = document.querySelector('img');
+        var p = document.querySelector('p');
+        var time = new Date();
+        var h = time.getHours();
+        if (h < 12) {
+            img.src = 'pic/more.png';
+            p.innerHTML = '早上好呀！';
+        }
+        else if (h > 12 && h < 18) {
+            img.src = 'pic/ability.png';
+            p.innerHTML = '下午好呀！';
+        }
+        else {
+            img.src = 'pic/bg.png';
+            p.innerHTML = '晚上好呀！';
+        }
+
+    </script> -->
+
+</body>
+
+</html>

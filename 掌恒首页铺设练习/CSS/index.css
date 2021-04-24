@@ -1,0 +1,182 @@
+.w {
+    width: 1400px;
+    margin: 0 auto;
+}
+header .bg {
+    width: 1400px;
+    height: 580px;
+    background: url(../pic/bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+header .bg .top {
+    overflow: hidden;
+    width: 1400px;
+    height: 65px;
+    background: url(../pic/header-bg-top.png);
+}
+header .bg .top .logo {
+    float: left;
+    width: 186px;
+    height: 43px;
+    margin-left: 230px;
+    margin-top: 10px;
+}
+header .bg .top .logo a {
+    display: block;
+    width: 186px;
+    height: 43px;
+    background: url(../pic/logo.png);
+    font-size: 0;
+}
+header .bg .top .top_nav {
+    float: right;
+    margin-right: 250px;
+}
+header .bg .top .top_nav ul li {
+    float: right;
+    margin-top: 32px;
+}
+header .bg .top .top_nav ul li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    background-color: #aaaaaa;
+    margin: 34px 14px 0;
+}
+header .bg  .main {
+    width: 457px;
+    height: 212px;
+   margin: 85px auto;
+
+
+}
+header .bg  .main  h1{
+    height: 34px;
+    font-size: 29.86px;
+    font-weight: 400;
+    color: #fff;
+}
+header .bg  .main  ul li {
+    float: left;
+    width: 168px;
+    height: 34px;
+    margin: 40px 30px ;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #eeeeee;
+    color: #eeeeee;
+    font-size: 14px;
+}
+header .bg  .main .one {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #bbbbbc;
+}
+header .bg  .main .two {
+    text-align: center;
+    font-size: 16px;
+    color: #bbbbbc;
+}
+.ability {
+    height: 480px;
+}
+.ability .top {
+    width: 278px;
+    height: 24px;
+    background: url(../pic/ability.png);
+    margin: 18px auto;
+    margin-bottom: 0;
+}
+ .ability .ability_info {
+     width: 857px;
+     height: 270px;
+     margin-left: 278px;
+     margin-top: 51px;
+  
+ }
+ .ability .ability_info li {
+     float: left;
+     height: 270px;
+ }
+ .ability .ability_info .one {
+     width: 153px;
+        margin-right: 32px;
+        text-align: center;
+ }
+ .ability .ability_info a{
+    display: inline-block;
+    width: 92px;
+    height: 106px;
+    background:url(../pic/abilities1.png) no-repeat;
+ }
+ .ability .ability_info a:hover {
+    background-color: #02c0e9;
+ }
+ .ability .ability_info .one h3 {
+     font-size: 16px;
+     font-weight: 400;
+     margin-top: 20px;
+     margin-bottom: 45px;
+ }
+ .ability .ability_info .two {
+    width: 225px;
+       margin-right: 50px;
+       text-align: center;
+}
+.ability .ability_info a{
+   display: inline-block;
+   width: 92px;
+   height: 106px;
+   background:url(../pic/abilities1.png) no-repeat;
+}
+.ability .ability_info a:hover {
+   background-color: #02c0e9;
+}
+.ability .ability_info .two h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.ability .ability_info .three {
+    width: 131px;
+       margin-right: 56px;
+       text-align: center;
+}
+.ability .ability_info a{
+   display: inline-block;
+   width: 92px;
+   height: 106px;
+   background:url(../pic/abilities1.png) no-repeat;
+}
+.ability .ability_info a:hover {
+   background-color: #02c0e9;
+}
+.ability .ability_info .three h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.ability .ability_info .four {
+    width: 210px;
+      
+       text-align: center;
+}
+.ability .ability_info a{
+   display: inline-block;
+   width: 92px;
+   height: 106px;
+   background:url(../pic/abilities1.png) no-repeat;
+}
+.ability .ability_info a:hover {
+   background-color: #02c0e9;
+}
+.ability .ability_info .four h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+ 
+

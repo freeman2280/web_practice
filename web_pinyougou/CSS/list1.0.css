@@ -1,0 +1,97 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+.style_red {
+    color: red;
+}
+header {
+    height: 82px;
+    line-height: 80px;
+    border-bottom: 2px solid red;
+}
+.registerarea {
+  
+    border: 1px solid pink;
+}
+h3 {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    border-bottom: 1px solid #b0b0b0;
+    background-color: #eaece9;
+}
+h3 .fl{
+    float: left;
+    padding-left: 10px;
+    font-size: 16px;
+}
+h3 .fr {
+    float: right;
+    padding-right: 10px;
+}
+.reg_form {
+    width: 600px;
+    height: 360px;
+    margin: 40px auto 0;
+
+}
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+.reg_form ul li label {
+    display: inline-block;
+    width: 83px;
+    text-align: right;
+}
+.reg_form ul li input {
+    width: 220px;
+    height: 30px;
+    outline: none;
+}
+.reg_form ul .safe {
+    color: #b0b0b0;margin-left: 170px;
+
+}
+.reg_form ul .safe .ruo {
+    padding: 0 7px;
+    background-color: pink;
+    color: #fff;
+}
+.reg_form ul .safe .zhong {
+    padding: 0 7px;
+    background-color: skyblue;
+    color: #fff;
+}
+.reg_form ul .safe .qiang {
+    padding: 0 7px;
+    background-color: red;
+    color: #fff;
+}
+.reg_form ul .xieyi {
+    margin-left: 115px;
+}
+.reg_form ul .xieyi input {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  padding-top: 2px;
+  vertical-align: middle;
+   
+}
+.reg_form ul .xieyi a {
+    color: #97b7cc;
+}
+.reg_form ul li:last-child {
+    width: 180px;
+    height: 35px;
+    background-color: red;
+    margin-left: 112px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 0;
+}

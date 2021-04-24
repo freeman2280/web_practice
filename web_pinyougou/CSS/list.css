@@ -1,0 +1,102 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+* {
+    box-sizing:border-box;
+}
+.style_red {
+    color: red;
+}
+header {
+    height: 82px;
+    border-bottom: 2px solid #000;
+    line-height: 80px;
+}
+
+h3 {
+    height: 30px;
+    margin-top: 15px;
+    background-color: #eaece9;
+    text-align: center;
+    line-height: 30px;
+}
+.fl {
+    float: left;
+    padding: 0 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.fr {
+    float: right;
+    padding: 0 3px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.registerarea {
+    height: 460px;
+}
+.registerarea .reg_form {
+    width: 600px;
+    height: 380px;
+    margin: 40px  auto;
+   
+ 
+
+}
+.registerarea .reg_form input {
+    width: 230px;
+    height: 30px;
+    outline: none;
+}
+.registerarea .reg_form label {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    text-align: right;
+}
+.registerarea .reg_form ul li {
+    margin-bottom: 30px;
+}
+.registerarea .reg_form ul .safe {
+  font-size: 8px;
+   text-indent: 205px;
+ color: #b0b0b0;
+}
+.registerarea .reg_form ul .safe {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.registerarea .reg_form ul .safe span {
+    padding: 0 6px;
+    color: #fff;
+}
+.registerarea .reg_form ul .ruo {
+    background-color: #ec2200;
+   
+}
+.registerarea .reg_form ul .zhong {
+    background-color: #2aa634;
+}
+ .qiang {
+    background-color: #fa9600;
+}
+.registerarea .reg_form ul li:nth-child(6)  a{
+    color: #76a7c8;
+}
+.registerarea .reg_form ul li:last-child {
+    width: 190px;
+    height: 30px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 100px;
+}
+.mod_link {
+    height: 100px;
+text-align: center;
+
+margin-top: 20px;
+}
+
