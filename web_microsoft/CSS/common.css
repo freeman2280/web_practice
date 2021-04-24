@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?4epor6');
+    src:  url('../fonts/icomoon.eot?4epor6#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?4epor6') format('truetype'),
+      url('../fonts/icomoon.woff?4epor6') format('woff'),
+      url('../fonts/icomoon.svg?4epor6#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+.w {
+    width: 1384px;
+    margin: 0 auto;
+}
+/* shortcut开始 */
+.shortcut {
+    height: 55px;
+}
+.shortcut .logo {
+    float: left;
+}
+.shortcut .logo a {
+    display: block;
+    margin-top: 12px;
+    margin-left: 5px;
+    width: 137px;
+    height: 32px;
+    background:url(../PIC/logo0.jpg) no-repeat;
+    font-size: 0;
+}
+.shortcut .left_nav {
+    float: left;
+    margin-left: 20px;
+    height: 55px;
+}
+.shortcut .left_nav ul li {
+    float: left;
+    margin-right: 28px;
+    line-height: 55px;
+}
+.shortcut .left_nav ul li a {
+    display: block;
+    height: 40px;
+    font-size: 13px;
+    text-align: center;
+}
+.shortcut .left_nav ul li a:hover {
+    border-bottom: 2px solid black;
+}
+.shortcut .left_nav ul li a:visited {
+    border: 2px black dashed;
+}
+.shortcut .right_nav{
+    float:right;
+    width: 406px;
+    height: 55px;
+    line-height: 55px;
+}
+.shortcut .right_nav .suoyou {
+    position: relative;
+    float: left;
+    width: 105px;
+    height: 44px;
+    line-height: 49px;
+}
+.shortcut .right_nav .suoyou .tab_con {
+    position: absolute;
+    top: 43px;
+    left: -760px;
+    width: 1200px;
+    height: 340px;
+    display: none;
+    z-index: 1000;
+}
+.shortcut .right_nav .suoyou .tab_con ul {
+    width: 100%;
+    height: 290px;
+    background-color: #F2F2F2;
+}
+.shortcut .right_nav .suoyou .tab_con .bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #E6E6E6;
+}
+.shortcut .right_nav .suoyou .tab_con .bottom {
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+.shortcut .right_nav .suoyou .tab_con .bottom a:hover {
+    text-decoration: underline;
+}
+.shortcut .right_nav .suoyou .tab_con ul li {
+    float: left;
+    margin-right: 50px;
+    width: 123px;
+    height: 270px;
+}
+.shortcut .right_nav .suoyou .tab_con ul li:first-child {
+    margin-left: 10px;
+}
+.shortcut .right_nav .suoyou .tab_con ul li:last-child {
+    margin-right: 0;
+}
+.shortcut .right_nav .suoyou .tab_con ul li span {
+    font-size: 13px;
+    font-weight: 700;
+}
+.shortcut .right_nav .suoyou .tab_con ul li a {
+    display: block;
+    font-size: 13px;
+    line-height: 30px;
+}
+.shortcut .right_nav .suoyou .tab_con ul li a:hover {
+    text-decoration: underline;
+}
+.shortcut .right_nav .suoyou input {
+    display: inline-block;
+    height: 24px;
+    width: 90px;
+    font-size: 13px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.shortcut .right_nav .suoyou input:hover {
+    border-bottom: 2px solid #000;
+}
+.shortcut .right_nav .suoyou em::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 15px;
+}
+.shortcut .right_nav .seacher {
+    float: left;
+    margin-left: 25px;
+    width: 56px;
+    height: 55px;
+    line-height: 55px;
+}
+.shortcut .right_nav .seacher span {
+    display: inline-block;
+    height: 40px;
+    font-size: 13px;
+}
+.shortcut .right_nav .seacher span:hover {
+    border-bottom: 2px solid #000;
+}
+.shortcut .right_nav .seacher img {
+    margin-left: 5px;
+}
+.shortcut .right_nav .shopcar {
+    float: left;
+    margin-left: 45px;
+    width: 62px;
+    line-height: 55px;
+}
+.shortcut .right_nav .shopcar a {
+    display: inline-block;
+    height: 40px;
+    font-size: 13px;
+}
+.shortcut .right_nav .shopcar a:hover {
+    border-bottom: 2px solid #000;
+}
+.shortcut .right_nav .shopcar em::after {
+    content: '';
+    font-family: 'icomoon';
+    font-size: 15px;
+    margin-left: 5px;
+}
+.shortcut .right_nav .login {
+    float: left;
+    margin-left: 14px;
+    width: 74px;
+    line-height: 55px;
+}
+.shortcut .right_nav .login a {
+    display: inline-block;
+    height: 40px;
+    font-size: 13px;
+}
+.shortcut .right_nav .login a:hover {
+    border-bottom: 2px solid #000;
+}
+.shortcut .right_nav .login img {
+    margin-left: 10px;
+}
+/* shortcut结束 */
+/* footer开始 */
+footer {
+    overflow: hidden;
+    height: 396px;
+    background-color: #F2F2F2;
+}
+footer .w {
+    height: 396px;
+}
+footer .w  .mod_service {
+    margin-top: 35px;
+    height: 268px;
+} 
+footer .w  .mod_service dt,footer .w  .mod_service dd {
+    line-height: 30px;
+}
+footer .w  .mod_service dt {
+    font-size:15px;
+}
+footer .w  .mod_service dd a:hover {
+    text-decoration: underline;
+}
+footer .w  .mod_service dl {
+    float: left;
+    margin-right: 130px;
+}
+footer .w  .mod_service dl:last-child {
+    margin-right: 0;
+}
+footer .w .mod_link {
+    margin-top: 22px;
+    height: 23px;
+}
+footer .w .mod_link a:hover {
+    text-decoration: underline;
+}
+footer .w .mod_link .china {
+    float: left;
+}
+footer .w .mod_link img {
+    margin-right: 5px;
+}
+footer .w .mod_link ul {
+    float:right;
+    width: 830px;
+}
+footer .w .mod_link ul li {
+    float: left;
+    margin-right: 22px;
+    height: 23px;
+    line-height: 23px;
+}
+/* footer结束 */

@@ -1,0 +1,259 @@
+.w {
+    width: 1384px;
+    margin: 0 auto; 
+}
+/* floor开始 */
+/* floor1开始 */
+.floor .floor1 {
+    overflow: hidden;
+    position: relative;
+    width: 1384px;
+    height: 523px;
+    z-index: 999;
+}
+.floor .floor1 .arrow_l {
+    display: none;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    font-size: 30px;
+    text-align: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #F7F7F7;
+    z-index: 999;
+}
+.floor .floor1 .arrow_r {
+    display: none;
+    position: absolute;
+    top: 250px;
+    left: 1337px;
+    text-align: center;
+    width: 47px;
+    height: 47px;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #F7F7F7;
+    z-index: 999;
+}
+.floor .floor1 ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+}
+.floor .floor1 ul li {
+    position: relative;
+    float: left;
+}
+.floor .floor1 ul  .item1 {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+}
+.floor .floor1 ul  .item2 {
+    position: absolute;
+    top: 160px;
+    left: 100px;
+} 
+.floor .floor1 ul  .item1 p,.floor .floor1 ul  .item2 p {
+    font-size: 15px;
+    margin: 30px 0;
+}
+.floor .floor1 ul  .item1 a,.floor .floor1 ul  .item2 a {
+    display: block;
+    width: 122px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 700;
+    background-color: #000;
+}
+.floor .floor1 ul  .item1 a:hover,.floor .floor1 ul  .item2 a:hover {
+    text-decoration: underline;
+}
+.floor .floor1 ol {
+    position: absolute;
+    top: 495px;
+    left: 635px;
+    width: 100px;
+    height: 10px;
+}
+.floor .floor1 ol li {
+    float: left;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+.current {
+    background-color: #333;
+}
+.floor .floor1 img {
+    position: relative;
+    width: 1384px;
+    height: 523px;
+}
+/* floor1结束 */
+/* floor2开始 */
+.floor .floor2 .shop_service {
+    margin: 60px auto;
+    width: 828px;
+    height: 85px;
+    line-height: 24px;
+    text-align: center;
+} 
+.floor .floor2 .shop_service p {
+    font-size: 15px;
+}
+.floor .floor2 .shop_service a:hover {
+    text-decoration: underline;
+}
+.floor .floor2 .shop_service .one {
+    float: left;
+    margin-right: 72px;
+}
+.floor .floor2 .shop_service .two {
+    float: left;
+    margin-right: 60px;
+}
+.floor .floor2 .shop_service .three {
+    float: left;
+    margin-right: 65px;
+}
+.floor .floor2 .shop_service .four {
+    float: left;
+    margin-right: 80px;
+}
+.floor .floor2 .shop_service .five {
+    float: left;
+}
+/* floor2结束 */
+/* floor3开始 */
+.floor .floor3 ul {
+    width: 1600px;
+    height: 450px;
+}
+.floor .floor3 ul li {
+    float: left;
+    width: 324px;
+    height: 450px;
+    margin-right: 30px;
+}
+.floor .floor3 ul li img {
+    width: 324px;
+    height: 182px;
+}
+.floor .floor3 ul li:last-child {
+    margin-right: 0;
+}
+.floor .floor3 ul li a {
+    font-size:15px;
+}
+.floor .floor3 ul li h3 {
+    margin-top: 35px;
+}
+.floor .floor3 ul li p {
+    margin: 8px 0;
+    width: 322px;
+}
+.floor .floor3 ul li .buy {
+    color: #0067B8;
+}
+.floor .floor3 ul li .buy:hover {
+    text-decoration: underline;
+}
+.floor .floor3 ul li:last-child .buy:last-child {
+    display: inline-block;
+    margin-top: 22px;
+}
+/* floor3结束 */
+/* floor4开始 */
+.floor .floor4 img {
+    width: 100%;
+}
+/* floor4结束 */
+/* floor5开始 */
+.floor .floor5 h2 {
+    margin-top: 42px;
+    height: 40px;
+} 
+.floor .floor5 ul {
+    width: 1600px;
+    height: 450px;
+}
+.floor .floor5 ul li {
+    float: left;
+    width: 324px;
+    height: 450px;
+    margin-right: 30px;
+}
+.floor .floor5 ul li img {
+    width: 324px;
+    height: 182px;
+}
+.floor .floor5 ul li:last-child {
+    margin-right: 0;
+}
+.floor .floor3 ul li:last-child {
+    margin-right: 0;
+}
+.floor .floor5 ul li a {
+    font-size:15px;
+}
+.floor .floor5 ul li h3 {
+    margin-top: 35px;
+}
+.floor .floor5 ul li p {
+    margin: 8px 0;
+    width: 322px;
+}
+.floor .floor5 ul li .buy {
+    color: #0067B8;
+}
+.floor .floor5 ul li .buy:hover {
+    text-decoration: underline;
+}
+/* .floor6开始 */
+.floor .floor6 img {
+    width: 100%;
+}
+.floor .floor6 .floor6_bottom {
+    height: 120px;
+}
+.floor .floor6 .floor6_bottom span {
+    float: left;
+    margin-top: 50px;
+}
+.floor .floor6 .floor6_bottom ul {
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.floor .floor6 .floor6_bottom ul li {
+    float: left;
+    margin-right: 7px;
+}
+.floor .floor6 .floor6_bottom ul li:first-child {
+    position: relative;
+}
+.floor .floor6 .floor6_bottom ul .code {
+    position: absolute;
+    top: 45px;
+    left: -22px;
+    width: 180px;
+    height: 100px;
+    display: none;
+}
+.floor .floor6 .floor6_bottom ul li:first-child:hover .code {
+    display: block;
+}
+/* floor6结束 */
+/* floor5结束 */
+/* floor结束 */

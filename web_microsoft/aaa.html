@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/base.css">
+    <style>
+        .focu {
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 1384px;
+            height: 523px;
+            margin: 0 auto;
+        }
+
+        .arrow_l,
+        .arrow_r {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            text-align: center;
+            font-size: 25px;
+            line-height: 40px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .arrow_l {
+            position: absolute;
+            top: 250px;
+            left: 0;
+        }
+
+        .arrow_r {
+            position: absolute;
+            top: 250px;
+            left: 1343px;
+        }
+
+        .focu ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300%;
+            height: 100%;
+        }
+
+        .focu ul li {
+            float: left;
+        }
+
+        .focu ul li img {
+            width: 1384px;
+            height: 523px;
+        }
+
+        .focu ol {
+            position: absolute;
+            top: 500px;
+            left: 620px;
+            height: 20px;
+            z-index: 1;
+        }
+
+        .focu ol li {
+            float: left;
+            margin-right: 5px;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #999;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .current {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="focu">
+        <a href="javascript:;" class="arrow_l">&lt;</a>
+        <a href="javascript:;" class="arrow_r">&gt;</a>
+        <ul>
+            <li><a href="#"><img src="PIC/focus0.png" alt=""></a></li>
+            <li><a href="#"><img src="PIC/focus1.jfif" alt=""></a></li>
+        </ul>
+
+        <ol class="circle"></ol>
+    </div>
+    <script>
+        var div = document.querySelector('div');
+        var arrow_l = document.querySelector('.arrow_l');
+        var arrow_r = document.querySelector('.arrow_r');
+        var focu = document.querySelector('.focu');
+        function animate(obj, target, callback) {
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                if (obj.offsetLeft == target) {
+                    var step = (target - obj.offsetLeft) / 10;
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                    clearInterval(obj.timer);
+                    if (callback) {
+                        callback();
+                    }
+                }
+                obj.style.left = obj.offsetLeft + step + 'px';
+            }, 15)
+        }
+        focu.addEventListener('mouseover', function () {
+            arrow_l.style.display = 'block';
+            arrow_r.style.display = 'block';
+        })
+        focu.addEventListener('mouseout', function () {
+            arrow_l.style.display = 'none';
+            arrow_r.style.display = 'none';
+        })
+
+        var ul = document.querySelector('ul');
+        var ol = document.querySelector('ol');
+        var focusWidth = focu.offsetWidth;
+        for (var i = 0; i < ul.children.length; i++) {
+            var li = document.createElement('li');
+            li.setAttribute('index', i);
+            ol.appendChild(li);
+            li.addEventListener('click', function () {
+                for (var j = 0; j < ol.children.length; j++) {
+                    ol.children[j].className = '';
+                }
+                var index = this.getAttribute('index');
+                this.className = 'current';
+                animate(ul, -index * focusWidth);
+            })
+
+        }
+        ol.children[0].className = 'current';
+        var num = 0;
+        var first = ul.children[0].cloneNode(true);
+        ul.appendChild(first);
+        arrow_r.addEventListener('click', function () {
+            if (num == ul.children.length - 1) {
+                ul.style.left = '0';
+                num = 0;
+            }
+            num++;
+            animate(ul, -num * focusWidth);
+        })
+    </script>
+</body>
+
+</html>
